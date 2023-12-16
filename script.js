@@ -13,7 +13,7 @@ async function obtenerHoraCiudad() {
 
     async function actualizarHora(ciudad) {
         try {
-            const urlApiHoraCiudad = `http://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
+            const urlApiHoraCiudad = `https://api.openweathermap.org/data/2.5/weather?q=${ciudad}&appid=${apiKey}`;
             const respuesta = await fetch(urlApiHoraCiudad);
             const datos = await respuesta.json();
 
